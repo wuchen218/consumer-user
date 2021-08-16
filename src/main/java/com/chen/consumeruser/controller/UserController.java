@@ -39,6 +39,7 @@ public class UserController extends CommonLogInfoController{
         name = "nihao";
         List list = restTemplate.getForObject("http://PROVIDER-TICKER/getList",List.class);
         map.put("list",list);
+        //map.put("list",list);
         return map;
     }
 }
